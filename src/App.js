@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Zidio
+          Zidio Development
         </a>
       </header>
     </div>
