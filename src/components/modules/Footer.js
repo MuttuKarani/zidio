@@ -12,8 +12,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#000033] text-white py-12 px-4 md:px-8 lg:px-16">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer className="bg-[#000033] text-white py-22 px-4 md:px-8 lg:px-16 h-[70vh] ">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-12">
         <div className="space-y-4">
           <img src={zidioLogo} alt="ZIDIO DEVELOPMENT" className="h-12 bg-white" />
           <p className="text-sm">
@@ -77,7 +77,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mt-12 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+      <div className="mt-32 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
         <p className="text-sm mb-4 md:mb-0">© 2024 @ Zidio Development. Designed by Team ZIDIO.</p>
         <div className="flex space-x-4">
           {[Facebook, Twitter, Linkedin, Youtube].map((Icon, index) => (
