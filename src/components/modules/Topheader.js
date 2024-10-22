@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { MdLocationOn, MdEmail, MdAccessTime } from "react-icons/md";
 import "../styles/Topheader.css";
 
@@ -44,7 +44,7 @@ const Topheader = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram className="icon" />
+              <FaLinkedin className="icon" />
             </a>
             <a
               href="https://www.youtube.com/channel/UCvxJRddqZowVyN6AXjylnMg"
