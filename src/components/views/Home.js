@@ -1,7 +1,16 @@
 import React from "react";
+import Heromodule from "../modules/Heromodule";
+import FeatureSection from "../modules/Featuresection";
+import AboutSection from "../modules/Aboutsection";
 
-const Home = () => {
-  return <div>Home</div>;
-};
+function Home() {
+  return (
+    <div className="Home">
+      <Heromodule />
+      <FeatureSection />
+      <AboutSection />
+    </div>
+  );
+}
 
 export default Home;

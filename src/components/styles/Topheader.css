@@ -1,0 +1,78 @@
+.top-header-area:before {
+  position: absolute;
+  content: "";
+  width: 53%;
+  height: 100%;
+  left: -11px;
+  top: 0;
+  background: #0c59db;
+  z-index: -1;
+  transform: skew(23deg);
+}
+
+.top-header-area {
+  background: #00194c;
+  padding: 12px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.left-section {
+  display: flex;
+  gap: 20px;
+}
+
+.location,
+.email {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.location .icon,
+.email .icon,
+.time .icon {
+  margin-right: 5px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.time {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  cursor: pointer;
+  color: #eef1f3;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #0056b3;
+}
+
+a {
+  text-decoration: none;
+}

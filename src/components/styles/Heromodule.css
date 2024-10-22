@@ -1,0 +1,111 @@
+.hero-area {
+  display: flex;
+  align-items: center;
+  background: url("/public/images/herobg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  padding-bottom: 80px;
+}
+
+.style-two .hero-content h4 {
+  margin: 0 0 3px;
+  font-size: 19px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Rajdhani";
+}
+.style-two .hero-content h1 {
+  font-size: 70px;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 74px;
+  font-weight: 700;
+  font-family: "Rajdhani";
+}
+.style-two .hero-content p {
+  color: #b6b9c0;
+  width: 72%;
+  font-size: 18px;
+  margin: 11px 0 0;
+}
+.style-two .hero-button {
+  margin-top: 49px;
+}
+.hero-button .btn {
+  background-color: #0c59db;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+}
+
+.hero-button .btn:hover {
+  background-color: #003b9f;
+}
+
+/* Right Side - Hero Image */
+.hero-thumb {
+  position: relative;
+  left: -48px;
+  top: 70px;
+}
+
+.hero-thumb img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hero Shape */
+.hero-shape {
+  position: absolute;
+  top: 45%;
+  right: 550px;
+  animation: rotateme 20s linear infinite;
+}
+
+.hero-shape img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-button-group {
+  display: flex;
+  gap: 20px;
+  margin-top: 49px;
+  margin-left: 160px;
+}
+
+.hero-button-group {
+  justify-content: flex-start;
+}
+
+.hero-button .btn {
+  background-color: #0c59db;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+}
+
+.hero-button .btn:hover {
+  background-color: #003b9f;
+}
+
+/* Media Query for Specific Screen Sizes (1200px to 1299px) */
+@media (min-width: 1200px) and (max-width: 1299px) {
+  .style-two .hero-shape {
+    top: 30%;
+    left: -60px;
+  }
+}
+
+/* Rotation Animation */
+@keyframes rotateme {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

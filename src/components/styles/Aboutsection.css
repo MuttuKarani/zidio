@@ -1,0 +1,99 @@
+.about-area {
+  padding: 60px 0;
+}
+
+.about-left {
+  position: relative;
+}
+
+.about-thumb {
+  margin-bottom: 20px;
+}
+
+.about-shape,
+.about-shape-two {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-counter-box {
+  position: absolute;
+  top: 12%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.about-counter-title h4 {
+  font-size: 36px;
+}
+
+.about-counter-title span {
+  font-size: 18px;
+}
+
+.about-counter-title p {
+  margin: 0;
+}
+
+.about-right {
+  padding-left: 30px;
+}
+
+.section-title.left.style-two h4,
+.section-title.left.style-two h1 {
+  margin-bottom: 10px;
+}
+
+.single-about-icon-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.single-about-icon-box .about-icon {
+  margin-right: 10px;
+}
+
+.single-about-icon-box h4 {
+  margin: 0;
+}
+.style-two .about-conter-box {
+  background: #0c59db;
+  display: inline-block;
+  text-align: center;
+  padding: 16px 40px;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+}
+.style-two .about-counter-title h4:before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 2px;
+  left: 24px;
+  bottom: 4px;
+  background: #fff;
+}
+.about-counter-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.toptech-button.style-one {
+  margin-top: 20px;
+}
+
+.style-two .about-shape {
+  position: absolute;
+  right: 76px;
+  bottom: 27px;
+  animation: bounceleft 4s linear infinite;
+}
