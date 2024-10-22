@@ -1,16 +1,21 @@
 // src/App.js
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./components/views/Home";
-import Topheader from "./components/modules/Topheader";
+//import "./components/modules/Navigation";
+import Navbar  from './components/modules/Navigation';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (
     <div className="App">
-      <Topheader />
-      <Home />
+      <header className="App-header">
+        <Navbar />
+      </header>
+      
     </div>
+
+
   );
 }
-
+/*        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Hello</h1> */
 export default App;
