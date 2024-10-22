@@ -1,4 +1,3 @@
-/* Skewed background effect for the top header area */
 .top-header-area:before {
   position: absolute;
   content: "";
@@ -18,21 +17,19 @@
   z-index: 1;
 }
 
-/* Container for the top header */
 .top-header {
   display: flex;
-  justify-content: space-between; /* Align items on opposite ends */
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  color: white; /* Ensure text is visible on the dark background */
+  color: white;
   position: relative;
-  z-index: 2; /* Ensure top header content is above the skewed background */
+  z-index: 2;
 }
 
-/* Left section for location and email */
 .left-section {
   display: flex;
-  gap: 20px; /* Space between location and email */
+  gap: 20px;
 }
 
 .location,
@@ -48,11 +45,10 @@
   margin-right: 5px;
 }
 
-/* Right section for working hours and social media icons */
 .right-section {
   display: flex;
   align-items: center;
-  gap: 15px; /* Space between time and social icons */
+  gap: 15px;
 }
 
 .time {
@@ -63,7 +59,7 @@
 
 .icons {
   display: flex;
-  gap: 10px; /* Space between social icons */
+  gap: 10px;
 }
 
 .icon {
@@ -74,7 +70,7 @@
 }
 
 .icon:hover {
-  color: #0056b3; /* Hover effect */
+  color: #0056b3;
 }
 
 a {

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Featuresection.css"; // Ensure this path is correct
+import "../styles/Featuresection.css";
 
 const FeatureSection = () => {
   const features = [

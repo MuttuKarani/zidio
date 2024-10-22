@@ -1,8 +1,5 @@
-/* AboutSection.css */
-
-/* General styling for about area */
 .about-area {
-  padding: 60px 0; /* Adjust padding as needed */
+  padding: 60px 0;
 }
 
 .about-left {
@@ -10,18 +7,18 @@
 }
 
 .about-thumb {
-  margin-bottom: 20px; /* Space between the image and shape */
+  margin-bottom: 20px;
 }
 
 .about-shape,
 .about-shape-two {
-  position: absolute; /* Position shapes as needed */
+  position: absolute;
   top: 0;
   left: 0;
 }
 
 .about-counter-box {
-  position: absolute; /* Position counter box */
+  position: absolute;
   top: 12%;
   left: 15%;
   transform: translate(-50%, -50%);
@@ -29,38 +26,38 @@
 }
 
 .about-counter-title h4 {
-  font-size: 36px; /* Counter number size */
+  font-size: 36px;
 }
 
 .about-counter-title span {
-  font-size: 18px; /* Plus sign size */
+  font-size: 18px;
 }
 
 .about-counter-title p {
-  margin: 0; /* Remove margin */
+  margin: 0;
 }
 
 .about-right {
-  padding-left: 30px; /* Add space between text and image */
+  padding-left: 30px;
 }
 
 .section-title.left.style-two h4,
 .section-title.left.style-two h1 {
-  margin-bottom: 10px; /* Space between titles */
+  margin-bottom: 10px;
 }
 
 .single-about-icon-box {
-  display: flex; /* Align icon and title */
+  display: flex;
   align-items: center;
-  margin-bottom: 20px; /* Space between icon boxes */
+  margin-bottom: 20px;
 }
 
 .single-about-icon-box .about-icon {
-  margin-right: 10px; /* Space between icon and title */
+  margin-right: 10px;
 }
 
 .single-about-icon-box h4 {
-  margin: 0; /* Remove margin */
+  margin: 0;
 }
 .style-two .about-conter-box {
   background: #0c59db;
@@ -91,7 +88,7 @@
   text-align: center;
 }
 .toptech-button.style-one {
-  margin-top: 20px; /* Space above the button */
+  margin-top: 20px;
 }
 
 .style-two .about-shape {
@@ -100,4 +97,3 @@
   bottom: 27px;
   animation: bounceleft 4s linear infinite;
 }
-/* You can add more styles as needed */
