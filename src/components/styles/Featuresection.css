@@ -1,0 +1,74 @@
+/* FeatureSection.css */
+
+/* General styling for feature area */
+.feature-area {
+  padding: 60px 0; /* Adjust padding as needed */
+}
+
+.single-feature-box {
+  text-align: center; /* Center text */
+  filter: drop-shadow(
+    0px 10px 10px rgba(207, 218, 235, 0.2)
+  ); /* Add drop shadow */
+  background: #fff; /* Background color for feature boxes */
+  padding: 56px 42px 33px; /* Padding around the content */
+  border-radius: 10px; /* Rounded corners */
+  position: relative; /* Positioning for pseudo-element */
+  z-index: 1; /* Ensure it's above pseudo-element */
+  margin-bottom: 23px; /* Space between boxes */
+  transition: transform 0.3s; /* Animation on hover */
+}
+
+.single-feature-box:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Pseudo-element for feature box shape */
+.single-feature-box:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0; /* Set height to 0 so it doesn’t take up space */
+  left: 0;
+  bottom: 0; /* Position at the bottom of the feature box */
+  background: url("/public/images/feature-box-shape.png"); /* Ensure the path is correct */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px; /* Match border radius of the box */
+  z-index: -1; /* Place it behind the feature box */
+  transition: 0.5s; /* Transition effect */
+  opacity: 0; /* Initially hidden */
+}
+
+/* Show the image on hover */
+.single-feature-box:hover:before {
+  height: 100%; /* Set height to cover the box */
+  opacity: 1; /* Make the image visible */
+}
+
+.feature-icon img {
+  max-width: 80px; /* Set max width for icons */
+  margin-bottom: 20px; /* Space between icon and text */
+}
+
+.feature-content h4 {
+  font-size: 22px; /* Adjust font size */
+  color: #333; /* Title color */
+  margin: 10px 0; /* Space above and below title */
+}
+
+.feature-content p {
+  color: #666; /* Description color */
+  margin-bottom: 15px; /* Space below description */
+}
+
+.feature-content a {
+  color: #e3e4e6; /* Link color */
+  text-decoration: none; /* No underline */
+  font-weight: bold; /* Bold link */
+}
+
+.feature-content a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
