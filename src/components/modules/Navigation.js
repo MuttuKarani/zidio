@@ -1,10 +1,11 @@
 import React from "react";
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import {Navbar, Nav, Container, Button} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/Navigation.css";
 
 const Navigation = () => {
   return (
+
     <Navbar bg="light" expand="lg" className="shadow-sm">
       <Container>
         {/* Logo */}
@@ -35,9 +36,12 @@ const Navigation = () => {
           <Button variant="primary" href="#quote">
             Get A Quote
           </Button>
+         
         </Navbar.Collapse>
+      
       </Container>
     </Navbar>
+
   );
 };
 
