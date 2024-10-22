@@ -1,4 +1,3 @@
-/* General Hero Section */
 .hero-area {
   display: flex;
   align-items: center;
@@ -9,7 +8,6 @@
   padding-bottom: 80px;
 }
 
-/* Style for hero content */
 .style-two .hero-content h4 {
   margin: 0 0 3px;
   font-size: 19px;
@@ -71,9 +69,7 @@
   max-width: 100%;
   height: auto;
 }
-/* Add this to your existing CSS */
 
-/* Group buttons horizontally */
 .hero-button-group {
   display: flex;
   gap: 20px;
@@ -81,12 +77,10 @@
   margin-left: 160px;
 }
 
-/* If you want to center the buttons in their container */
 .hero-button-group {
-  justify-content: flex-start; /* Change to center or space-between if needed */
+  justify-content: flex-start;
 }
 
-/* Button styles remain unchanged */
 .hero-button .btn {
   background-color: #0c59db;
   border: none;

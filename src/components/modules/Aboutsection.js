@@ -1,6 +1,6 @@
 // AboutSection.js
 import React from "react";
-import "../styles/Aboutsection.css"; // Adjust the path as necessary
+import "../styles/Aboutsection.css";
 import { Button } from "bootstrap";
 
 const AboutSection = () => {
