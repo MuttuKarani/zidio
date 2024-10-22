@@ -25,35 +25,35 @@ export default function Footer() {
           </button>
         </div>
 
-        <div className=" list-none">
-          <h3 className="text-xl font-bold mb-4">Company</h3>
-          <ul className="space-y-2 !list-none">
-            {['About', 'Our Team', 'Contact', 'Careers'].map((item) => (
-              <li key={item} >
-                <a href="#" className="hover:text-[#0066ff] transition-colors duration-300 flex items-center">
-                <CircleArrowRightIcon className="ml-2 h-4 w-4" />
-                <div className="w-1 h-1 bg-[#0066ff] rounded-full mr-2"></div>
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
+        {/* Company Links */}
         <div>
-          <h3 className="text-xl font-bold mb-4 ">Our Services</h3>
-          <ul className="space-y-2">
-            {['IT Solutions', 'Cyber Security', 'Digital Marketing', 'Machine Learning', 'Cloud Services'].map((item) => (
-              <li key={item}>
-                
-                <a href="#" className="hover:text-[#0066ff] transition-colors duration-300 flex items-center">
-                <CircleArrowRightIcon className="ml-2 h-4 w-4" /> <div className="w-1 h-1 bg-[#0066ff] rounded-full mr-2"></div>
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+            <h4 className="text-xl font-semibold mb-4">Company</h4>
+            <ul className="space-y-2">
+              {['About', 'Our Team', 'Contact', 'Careers'].map((item) => (
+                <li key={item}>
+                  <a href="#" className="flex items-center hover:text-blue-400">
+                    <CircleArrowRightIcon className="mr-2 w-4 h-4" />
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          
+        {/* Services Links */}
+        <div>
+            <h4 className="text-xl font-semibold mb-4">Our Services</h4>
+            <ul className="space-y-2">
+              {['IT Solutions', 'Cyber Security', 'Digital Marketing', 'Machine Learning', 'Cloud Services'].map((item) => (
+                <li key={item}>
+                  <a href="#" className="flex items-center hover:text-blue-400">
+                    <CircleArrowRightIcon className="mr-2 w-4 h-4" />
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
 
         <div>
           <h3 className="text-xl font-bold mb-4">Newsletter</h3>
@@ -94,3 +94,4 @@ export default function Footer() {
     </footer>
   );
 }
+
