@@ -1,7 +1,11 @@
+
 import React from "react";
 import {Navbar, Nav, Container, Button} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/Navigation.css";
+//import Link from "react-router-dom"
+
+
 
 const Navigation = () => {
   return (
@@ -18,20 +22,26 @@ const Navigation = () => {
 
         {/* Navigation links */}
         <Navbar.Collapse id="navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#services">Services</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+        
+
+         <Nav className="me-auto">
+            
+            <Nav.Link href="#Home" className="nav-link">Home</Nav.Link>
+            <Nav.Link href="#About" className="nav-link">About</Nav.Link> 
+            <Nav.Link href="#services" className="nav-link">Services</Nav.Link>
+            <Nav.Link href="#contact" className="nav-link">Contact</Nav.Link>
           </Nav>
+
 
           {/* Search icon */}
-          <Nav className="me-3">
-            <Nav.Link href="#search">
+
+            <Nav className="me-3">
+            <Nav.Link href="#search" className="nav-link">
               <i className="bi bi-search"></i>
             </Nav.Link>
-          </Nav>
+          </Nav> 
 
+ 
           {/* Button */}
           <Button variant="primary" href="#quote">
             Get A Quote
@@ -41,6 +51,8 @@ const Navigation = () => {
       
       </Container>
     </Navbar>
+
+
 
   );
 };
