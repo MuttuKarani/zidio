@@ -1,0 +1,11 @@
+.top-header-area::before {
+  position: absolute;
+  content: "";
+  width: 53%;
+  height: 100%;
+  left: -11px;
+  top: 0;
+  background: #0c59db;
+  z-index: -1;
+  transform: skew(23deg);
+}

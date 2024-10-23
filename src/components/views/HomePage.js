@@ -10,12 +10,14 @@ import Navbar from "../modules/Navbar";
 import Hero from "../modules/Hero";
 import CounterArea from "../modules/CounterArea";
 import ContactInfo from "../modules/ContactInfo";
+import Topheader from "../modules/TopHeader";
 
 const HomePage = () => {
   return (
     <>
-       <Navbar />
-       <Hero />
+      <Topheader />
+      <Navbar />
+      <Hero />
       <Features />
       <About />
       <Services />
