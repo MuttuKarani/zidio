@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Search, X } from 'lucide-react'
 import ZidioLogo from '../../images/zidioLogo.png'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
@@ -9,23 +10,35 @@ export default function Navbar() {
     setIsSearchOpen(!isSearchOpen)
   }
 
+  const navItems = [
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Services', path: '/services' },
+    { name: 'Contact', path: '/contact' },
+  ];
+
   return (
-    <nav className="bg-white shadow-md fixed top-0 left-0 w-full h-[15vh] z-50">
+    <nav className="bg-white shadow-md sticky top-0 left-0 w-full h-[15vh] z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
         <div className="flex justify-between items-center h-full">
           <div className="flex-shrink-0 flex items-center">
             <img className="h-8 w-auto" src= {ZidioLogo} alt="ZIDIO Development" />
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-            {['Home', 'About', 'Services', 'Contact'].map((item) => (
+            {/* {navItems.map((item) => (
               <a
-                key={item}
+                key={item.name}
                 href="#"
                 className="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
               >
                 {item}
               </a>
-            ))}
+            ))} */}
+            {navItems.map((item) => (
+            <Link key={item.name} to={item.path}>
+              {item.name}
+            </Link>
+          ))}
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center">
             <button

@@ -1,9 +1,15 @@
 import React from 'react'
 import { ArrowRight } from 'lucide-react'
+import smilingMan from '../../images/hero-thumb.png'
+import heroShape from '../../images/hero-shape.png'
 
+//
 export default function Hero() {
   return (
-    <div className="bg-gradient-to-r from-purple-600 to-blue-500 min-h-screen flex items-center relative overflow-hidden">
+    <div className="   min-h-screen flex items-center relative overflow-hidden" 
+    style={{
+      backgroundImage: "url('../../images/service-bg.png')",
+    }}>
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-purple-700 opacity-20 transform -skew-x-12"></div>
         <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-blue-400 opacity-20 transform skew-x-12"></div>
@@ -31,13 +37,13 @@ export default function Hero() {
             </div>
           </div>
           <div className="lg:w-1/3 mt-8 lg:mt-0">
-            <img src="/placeholder.svg?height=400&width=300" alt="Smiling man" className="mx-auto" />
+            <img src= {smilingMan} alt="Smiling man" className="mx-auto" />
           </div>
         </div>
       </div>
-      <div className="absolute top-4 right-4">
+      <div className="absolute top-14 right-14">
         <div className="bg-white rounded-full p-2">
-          <img src="/placeholder.svg?height=50&width=50" alt="Logo" className="w-12 h-12" />
+          <img src={heroShape} alt="Logo" className="w-24 h-24" />
         </div>
       </div>
     </div>

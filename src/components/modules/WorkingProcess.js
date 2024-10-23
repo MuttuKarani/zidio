@@ -1,3 +1,6 @@
+import process1 from '../../images/process-1.png'
+import process2 from '../../images/process-2.png'
+import process3 from '../../images/process-3.png'
 
 
 export default function WorkingProcess() {
@@ -6,19 +9,19 @@ export default function WorkingProcess() {
       number: '01',
       title: 'Start A Project',
       description: 'Kick off your project with a clear understanding of your goals and requirements, setting the foundation for success.',
-      image: '/placeholder.svg?height=200&width=200'
+      image: process1
     },
     {
       number: '02',
       title: 'Project Analysis',
       description: 'Conduct a thorough analysis to create a tailored strategy, ensuring all aspects align with your business objectives.',
-      image: '/placeholder.svg?height=200&width=200'
+      image: process2
     },
     {
       number: '03',
       title: 'Deliver to Success',
       description: 'Execute and deliver the project with precision, ensuring it meets your expectations and drives your success.',
-      image: '/placeholder.svg?height=200&width=200'
+      image: process3
     }
   ]
 

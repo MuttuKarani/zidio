@@ -1,21 +1,22 @@
 import React from 'react'
 import { ArrowRight, DollarSign, Users, Headphones, ThumbsUp } from 'lucide-react'
-
+import aboutThumb from '../../images/about-thumb.png'
+import image from '../../images/image.png'
 export default function About() {
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 mb-8 lg:mb-0">
           <div className="relative">
-            <img src="/placeholder.svg?height=400&width=500" alt="Team working" className="rounded-lg" />
+            <img src={aboutThumb} alt="Team working" className="rounded-lg" />
             <div className="absolute top-0 left-0 bg-blue-600 text-white p-4 rounded-lg">
               <div className="text-4xl font-bold">3+</div>
               <div className="text-sm">Years Of<br />Experiences</div>
             </div>
-            <div className="absolute bottom-0 right-0 w-2/3">
-              <img src="/placeholder.svg?height=200&width=300" alt="Team collaboration" className="rounded-lg" />
+            
+            <div className="absolute -bottom-2 -right-4 w-44 h-44 bg-blue-100 rounded-full">
+            <img src={image} alt="Team working" className="rounded-lg" />
             </div>
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-100 rounded-full"></div>
           </div>
         </div>
         <div className="lg:w-1/2 lg:pl-12">

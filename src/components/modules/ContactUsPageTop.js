@@ -1,8 +1,8 @@
 import { ChevronRight } from "lucide-react"
-import bgImage from '../../images/service-bg.png'
 
 
-export default function AboutUsPageTop() {
+
+export default function ContactUsPageTop() {
   return (
     <div className="bg-navy-600 relative h-screen">
       <div className="absolute inset-0 w-full h-screen">
@@ -26,18 +26,18 @@ export default function AboutUsPageTop() {
         </svg>
       </div>
       <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center">
-        <h1 className="text-5xl font-bold text-white mb-4">About Us</h1>
+        <h1 className="text-5xl font-bold text-white mb-4">Contact Us</h1>
         <nav className="flex" aria-label="Breadcrumb">
           <ol className="inline-flex items-center space-x-1 md:space-x-3">
             <li className="inline-flex items-center">
-              <a href="/" className="text-sm font-medium text-gray-300 hover:text-white">
+              <a href="#" className="text-sm font-medium text-gray-300 hover:text-white">
                 Home
               </a>
             </li>
             <li>
               <div className="flex items-center">
                 <ChevronRight className="w-5 h-5 text-gray-400" />
-                <span className="ml-1 text-sm font-medium text-gray-300 md:ml-2">About Us</span>
+                <span className="ml-1 text-sm font-medium text-gray-300 md:ml-2">Contact Us</span>
               </div>
             </li>
           </ol>

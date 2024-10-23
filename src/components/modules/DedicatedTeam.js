@@ -1,26 +1,30 @@
 import React from 'react'
 import { Share2 } from 'lucide-react'
+import salama from '../../images/salama.JPG'
+import animesh  from '../../images/animesh.jpg'
+import harash from '../../images/harash.jpg'
+import chandan from '../../images/chandan.png'
 
 const teamMembers = [
   {
     name: 'Animesh Singh',
     role: 'Full Stack Web Developer',
-    image: '/placeholder.svg?height=400&width=300'
+    image: animesh
   },
   {
     name: 'Salma Husna Salsabila',
     role: 'UI/UX Designer',
-    image: '/placeholder.svg?height=400&width=300'
+    image: salama
   },
   {
     name: 'Chandan Mishra',
     role: 'Data Scientist',
-    image: '/placeholder.svg?height=400&width=300'
+    image: chandan
   },
   {
     name: 'Harsa Dash',
     role: 'Developer Team Lead',
-    image: '/placeholder.svg?height=400&width=300'
+    image: harash
   }
 ]
 

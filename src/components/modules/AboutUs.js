@@ -1,20 +1,22 @@
 import React from 'react'
 import { Check, ArrowRight } from 'lucide-react'
+import aboutThumb2 from '../../images/about-thumb2.png'
 
 export default function AboutUs() {
   return (
-    <div className="container mx-auto px-4 py-16">
+    <div className="container mx-auto px-4 py-16"
+     >
       <div className="flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 mb-8 lg:mb-0 relative">
-          <img src="/placeholder.svg?height=400&width=500" alt="Team working" className="rounded-lg" />
-          <img src="/placeholder.svg?height=300&width=400" alt="Person working" className="absolute bottom-0 right-0 w-2/3 rounded-lg" />
+          <img src={aboutThumb2} alt="Team working" className="rounded-lg" />
+          {/* <img src="/placeholder.svg?height=300&width=400" alt="Person working" className="absolute bottom-0 right-0 w-2/3 rounded-lg" /> */}
           <div className="absolute bottom-0 left-0 bg-blue-600 text-white p-6 rounded-full w-48 h-48 flex flex-col items-center justify-center">
             <div className="text-4xl font-bold">1000+</div>
             <div className="text-sm text-center">Completed Projects</div>
           </div>
           <div className="absolute top-0 right-0 bg-navy-900 text-white p-4 rounded-lg">
             <div className="flex items-center">
-              <img src="/placeholder.svg?height=24&width=24" alt="Award icon" className="mr-2" />
+              {/* <img src="/placeholder.svg?height=24&width=24" alt="Award icon" className="mr-2" /> */}
               <div>
                 <div className="font-semibold">Award Wining</div>
                 <div className="text-sm">Best Services</div>
