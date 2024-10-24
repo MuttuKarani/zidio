@@ -1,13 +1,12 @@
-// src/App.js
 import "./App.css";
 import Navbar from "./components/modules/Navigation";
 import "bootstrap/dist/css/bootstrap.css";
-import Home from "./components/views/HomePage";
-
-import Services from "./components/views/ServicesPage";
-import Contact from "./components/views/ContactPage";
+import HomePage from "./components/views/HomePage";
+import AboutPage from "./components/views/AboutPage";
+import ServicesPage from "./components/views/ServicesPage";
+import ContactPage from "./components/views/ContactPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AboutUs from "./components/views/AboutPage";
+
 import Topheader from "./components/modules/Topheader";
 
 function App() {
@@ -17,10 +16,10 @@ function App() {
         <Topheader />
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </Router>
     </div>
