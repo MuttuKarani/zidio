@@ -1,0 +1,8 @@
+.breadcumb-area {
+  background: url("/public/images/breadcumb-bg.png");
+  padding: 211px 0 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -100px;
+  position: relative;
+}
